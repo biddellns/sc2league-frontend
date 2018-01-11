@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Custom added
-tags
+tags*
