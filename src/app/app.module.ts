@@ -10,6 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { LeaguesComponent } from './leagues/leagues.component';
 import { LeagueService } from './league.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LeagueService } from './league.service';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, {dataEncapsulation: false }
-    )
+    ),
+    AppRoutingModule
   ],
   providers: [LeagueService],
   bootstrap: [AppComponent]
